@@ -19,7 +19,7 @@ Comparision between:
 * Java immutable collections https://github.com/brianburton/java-immutable-collections
 * Androidx collections like ArraySet, SparseArray
 
-#### List with 100_000 items
+#### List with 100 000 items
 | List\<Integer> | Size in bytes |
 | ------ | ------ |
 | Integer[] | 1997968 |
@@ -30,7 +30,9 @@ Comparision between:
 | ConsPStack | 4797984 |
 | TreePVector | 5598048 |
 
-#### Set with 100_000 items
+![Description](./assets/lists_size.png)
+
+#### Set with 100 000 items
 | Set\<Integer> | Size in bytes |
 | ------ | ------ |
 | Integer[] | 1997968 |
@@ -41,7 +43,9 @@ Comparision between:
 | JImmutableHashMultiset | 9246224 |
 | MapPSet | 11198104 |
 
-#### Map with 100_000 items
+![Description](./assets/sets_size.png)
+
+#### Map with 100 000 items
 | Map\<Integer, Integer> | Size in bytes |
 | ------ | ------ |
 | Integer[] | 1997968 |
@@ -59,3 +63,5 @@ Comparision between:
 | HashPMap | 11198088 |
 | JImmutableHashListMap | 12446256 |
 | JImmutableHashSetMap | 19646256 |
+
+![Description](./assets/maps_size.png)
