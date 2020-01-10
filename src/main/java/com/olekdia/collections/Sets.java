@@ -16,8 +16,8 @@ public class Sets {
     public final TreeSet<Integer> mTreeSet;
     public final ArraySet<Integer> mArraySet;
     public final MapPSet<Integer> mMapPSet;
-    public final JImmutableSet<Integer> mJImmutableSet;
-    public final JImmutableMultiset<Integer> mJImmutableMultiset;
+    public final JImmutableSet<Integer> mJImmutableHashSet;
+    public final JImmutableSet<Integer> mJImmutableTreeSet;
 
     public Sets(final int size) {
         mArray = new Integer[size];
@@ -29,7 +29,7 @@ public class Sets {
         mTreeSet = CollectionHelper.add(new TreeSet(), mArray);
         mArraySet = CollectionHelper.add(new ArraySet<>(size), mArray);
         mMapPSet = (MapPSet) CollectionHelper.plus(HashTreePSet.empty(), mArray);
-        mJImmutableSet = (JImmutableSet) CollectionHelper.add(JImmutables.set(), mArray);
-        mJImmutableMultiset = (JImmutableMultiset) CollectionHelper.add(JImmutables.multiset(), mArray);
+        mJImmutableHashSet = (JImmutableSet) CollectionHelper.add(JImmutables.set(), mArray);
+        mJImmutableTreeSet = (JImmutableSet) CollectionHelper.add(JImmutables.sortedSet(), mArray);
     }
 }

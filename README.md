@@ -4,6 +4,10 @@ Build:
 ```
 ./gradlew build
 ```
+Run:
+```
+./gradlew run
+```
 Guides how to measure object size:
 * https://www.baeldung.com/java-size-of-object
 * https://www.javaspecialists.eu/archive/Issue142.html
@@ -37,10 +41,10 @@ Comparision between:
 | ------ | ------ |
 | Integer[] | 1997968 |
 | ArraySet | 2398016 |
+| JImmutableTreeSet | 5598032 |
 | TreeSet | 5598032 |
 | HashSet | 5846624 |
 | JImmutableHashSet | 9246216 |
-| JImmutableHashMultiset | 9246224 |
 | MapPSet | 11198104 |
 
 ![Description](./assets/sets_size.png)
@@ -61,7 +65,5 @@ Comparision between:
 | LinkedHashMap | 6646600 |
 | JImmutableHashMap | 9246200 |
 | HashPMap | 11198088 |
-| JImmutableHashListMap | 12446256 |
-| JImmutableHashSetMap | 19646256 |
 
 ![Description](./assets/maps_size.png)

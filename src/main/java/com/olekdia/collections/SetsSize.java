@@ -11,7 +11,7 @@ public class SetsSize {
         printDeepSize(sets.mTreeSet);
         printDeepSize(sets.mArraySet);
         printDeepSize(sets.mMapPSet);
-        printDeepSize(sets.mJImmutableSet);
-        printDeepSize(sets.mJImmutableMultiset);
+        printDeepSize(sets.mJImmutableHashSet);
+        printDeepSize(sets.mJImmutableTreeSet);
     }
 }

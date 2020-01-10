@@ -14,10 +14,8 @@ public class MapsSize {
         printDeepSize(maps.mSparseArray);
         printDeepSize(maps.mHashPMap);
         printDeepSize(maps.mIntTreePMap);
-        printDeepSize(maps.mJImmutableMap);
-        printDeepSize(maps.mJImmutableSortedMap);
-        printDeepSize(maps.mJImmutableListMap);
-        printDeepSize(maps.mJImmutableSetMap);
+        printDeepSize(maps.mJImmutableHashMap);
+        printDeepSize(maps.mJImmutableTreeMap);
         printDeepSize(maps.mEclipseMutableMap);
         printDeepSize(maps.mEclipseImmutableMap);
         printDeepSize(maps.mGuavaImmutableMap);
